@@ -16,32 +16,44 @@
 
 	<body>
 		
-		<div class = "jumbotron text-center"> 
+		<div class = "jumbotron text-center padding"> 
 			<h1><span class="glyphicon glyphicon-star-empty"></span> The Psy-Cat Letter Game <span class="glyphicon glyphicon-star-empty"></span></h1>
 		</div>
 
 		<div class = "container">
 			<div class = "row">
-				<div class = "col-md-4">
+				<div class = "col-xs-12 col-md-4 padding text-center">
 					<img src="https://s-media-cache-ak0.pinimg.com/originals/d4/7d/23/d47d23046e3bfd1108b28f7acd69869f.jpg" alt="Cat Fortune Teller" class = "img-responsive img-circle">
 				</div>
-				<div class = "col-md-8">
-					<div class = "panel panel-default">
+				<div class="clearfix visible-xs-block"></div>
+				<div class = "col-xs-12 col-md-8 padding">
+					<div class = "panel panel-default padding">
 						<h2 class = "text-center">Meowrrrrr... <br>Guess what letter I'm thinking of!</h2>
 						<div class = "panel-body padding">
 							<p><span class="glyphicon glyphicon-thumbs-up"></span>
-								<span id ="wins"> Wins: 0<span></p>
+								Wins: <span id ="wins">0<span></p>
 							<p><span class="glyphicon glyphicon-thumbs-down"></span>
-								<span id = "losses"> Losses: 0</span></p>
+								Losses: <span id ="losses">0</span></p>
 							<p><span class="glyphicon glyphicon-question-sign"></span>
-								<span id = "gLeft"> Guesses Left: 10</span></p>
+								 Guesses Left: <span id ="gLeft">10</span></p>
 							<p><span class="glyphicon glyphicon-flash"></span>
-								<span id = "guesses"> Your Guesses so far: </span></p>
+								Your Guesses so far: <span id ="guesses"> </span></p>
 						</div>
+						<div class="clearfix visible-xs-block"></div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- Free cat sounds from http://www.orangefreesounds.com/ -->
+		<audio id="sadMeow">
+  			<source src="assets/Sad-cat.mp3" type="audio/mpeg">
+		</audio>
+
+		<audio id="catMeow">
+  			<source src="assets/Cat-meow.mp3" type="audio/mpeg">
+		</audio>
+
 		<script type = "text/javascript" src="assets/javascript/game.js"></script>
 	</body>
 </html>

@@ -8,7 +8,6 @@ var lossTotal = 0;
 var guessesLeft = 10;
 var randomIndex = Math.floor(Math.random() * alphabet.length);
 
-
 // This function is run whenever the user presses a key.
 document.onkeyup = function(event){
 
@@ -22,28 +21,30 @@ document.onkeyup = function(event){
 		if(guessesLeft > 0){
 
 			if (userInput.toLowerCase() === alphabet[randomIndex]){
+				document.getElementById("catMeow").play();
 				alert("You are correct! The letter I was thinking was \'" + alphabet[randomIndex] + "\'.");
 				winTotal++;
-				document.getElementById("wins").innerHTML = " Wins: " + winTotal;
+				document.getElementById("wins").innerHTML = winTotal;
 				guessesLeft = 10;
-				document.getElementById("gLeft").innerHTML = " Guesses Left: " + guessesLeft;
-				document.getElementById("guesses").innerHTML = " Your Guesses so far: "; 
+				document.getElementById("gLeft").innerHTML = guessesLeft;
+				document.getElementById("guesses").innerHTML = ""; 
 				randomIndex = Math.floor(Math.random() * alphabet.length);
 				}	
 
 			else if (userInput.toLowerCase() != alphabet[randomIndex]){
 				guessesLeft--;
-				document.getElementById("gLeft").innerHTML = " Guesses Left: " + guessesLeft;
+				document.getElementById("gLeft").innerHTML = guessesLeft;
 				}
 		}
 
 		else{
+			document.getElementById("sadMeow").play();
 			alert("You ran out of guesses! The letter I was thinking of was \'" + alphabet[randomIndex] + "\'.");
 			lossTotal++;
-			document.getElementById("losses").innerHTML = " Losses: " + lossTotal;
+			document.getElementById("losses").innerHTML = lossTotal;
 			guessesLeft = 10;
-			document.getElementById("gLeft").innerHTML = " Guesses Left: " + guessesLeft;
-			document.getElementById("guesses").innerHTML = " Your Guesses so far: "; 
+			document.getElementById("gLeft").innerHTML = guessesLeft;
+			document.getElementById("guesses").innerHTML = ""; 
 			randomIndex = Math.floor(Math.random() * alphabet.length);
 		}
 	}

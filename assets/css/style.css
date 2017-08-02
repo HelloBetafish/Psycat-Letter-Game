@@ -1,12 +1,14 @@
 img {
 	width: 366px;
 	height: 482px;
+	margin:auto;
 }
 
 body {
 	/* Background pattern from Subtle Patterns */
 	background-image:url("../images/wormz/wormz.png") ;
 	font-family: 'Bowlby One SC', cursive;
+	padding-bottom: 50px;
 }
 
 p {
@@ -19,7 +21,7 @@ h2 {
 }
 
 .padding {
-	padding:25px;
+	padding:20px;
 }
 
 .jumbotron{
@@ -32,4 +34,8 @@ h2 {
 	color:midnightblue;
 	background-color:cornsilk;
 	border:1px dotted #700626;
+}
+
+#guesses, #wins, #losses, #gLeft{
+	color: red;
 }
