@@ -1,0 +1,35 @@
+img {
+	width: 366px;
+	height: 482px;
+}
+
+body {
+	/* Background pattern from Subtle Patterns */
+	background-image:url("../images/wormz/wormz.png") ;
+	font-family: 'Bowlby One SC', cursive;
+}
+
+p {
+	font-size:x-large;
+}
+
+h2 {
+	text-decoration:underline;
+	line-height: 1.5;
+}
+
+.padding {
+	padding:25px;
+}
+
+.jumbotron{
+	background-color:#700626;
+	color:paleturquoise;
+	text-shadow: 2px 2px 5px red;;
+}
+
+.panel {
+	color:midnightblue;
+	background-color:cornsilk;
+	border:1px dotted #700626;
+}

@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>Psy-Cat Letter Game</title>
 		<meta charset="UTF-8">
-		<title>Psychic Letter Game</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--favicon from https://www.freefavicon.com/-->
+		<link rel="shortcut icon" href="assets/images/favicon/favicon.ico" type="image/x-icon">
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Arvo|Bowlby+One+SC" rel="stylesheet">
+		<!-- Link to Bootstrap CDN -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!--Link to CSS-->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
 
 	<body>
 		
-		<h1>The Psychic Letter Game</h1>
-		<p>Guess what letter I'm thinking of!</p>
-		<div id = "game">
-			<p id ="wins">Wins: 0</p>
-			<p id = "losses">Losses: 0</p>
-			<p id = "gLeft">Guesses Left: 10</p>
+		<div class = "jumbotron text-center"> 
+			<h1><span class="glyphicon glyphicon-star-empty"></span> The Psy-Cat Letter Game <span class="glyphicon glyphicon-star-empty"></span></h1>
 		</div>
-			<p id = "guesses">Your Guesses so far: </p>
 
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-4">
+					<img src="https://s-media-cache-ak0.pinimg.com/originals/d4/7d/23/d47d23046e3bfd1108b28f7acd69869f.jpg" alt="Cat Fortune Teller" class = "img-responsive img-circle">
+				</div>
+				<div class = "col-md-8">
+					<div class = "panel panel-default">
+						<h2 class = "text-center">Meowrrrrr... <br>Guess what letter I'm thinking of!</h2>
+						<div class = "panel-body padding">
+							<p><span class="glyphicon glyphicon-thumbs-up"></span>
+								<span id ="wins"> Wins: 0<span></p>
+							<p><span class="glyphicon glyphicon-thumbs-down"></span>
+								<span id = "losses"> Losses: 0</span></p>
+							<p><span class="glyphicon glyphicon-question-sign"></span>
+								<span id = "gLeft"> Guesses Left: 10</span></p>
+							<p><span class="glyphicon glyphicon-flash"></span>
+								<span id = "guesses"> Your Guesses so far: </span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script type = "text/javascript" src="assets/javascript/game.js"></script>
 	</body>
 </html>
