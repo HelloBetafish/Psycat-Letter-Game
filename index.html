@@ -15,17 +15,19 @@
 	</head>
 
 	<body>
-		
+		<!--Jumbotron Header-->
 		<div class = "jumbotron text-center padding"> 
 			<h1><span class="glyphicon glyphicon-star-empty"></span> The Psy-Cat Letter Game <span class="glyphicon glyphicon-star-empty"></span></h1>
 		</div>
-
+		<!--Body container-->
 		<div class = "container">
 			<div class = "row">
+				<!--1st Column-->
 				<div class = "col-xs-12 col-md-4 padding text-center">
 					<img src="https://s-media-cache-ak0.pinimg.com/originals/d4/7d/23/d47d23046e3bfd1108b28f7acd69869f.jpg" alt="Cat Fortune Teller" class = "img-responsive img-circle animated fadeOut infinite">
 				</div>
 				<div class="clearfix visible-xs-block"></div>
+				<!--2nd Column-->
 				<div class = "col-xs-12 col-md-8 padding">
 					<div class = "panel panel-default padding">
 						<h2 class = "text-center">Meowrrrrr... <br>Guess what letter I'm thinking of!</h2>
@@ -39,21 +41,22 @@
 							<p><span class="glyphicon glyphicon-flash"></span>
 								Your Guesses so far: <span id ="guesses"> </span></p>
 						</div>
-						<div class="clearfix visible-xs-block"></div>
 					</div>
 				</div>
+				<div class="clearfix visible-xs-block"></div>
 			</div>
 		</div>
 
 		<!-- Free cat sounds from http://www.orangefreesounds.com/ -->
 		<audio id="sadMeow">
-  			<source src="assets/Sad-cat.mp3" type="audio/mpeg">
+  			<source src="assets/sad-cat.mp3" type="audio/mpeg">
 		</audio>
 
 		<audio id="catMeow">
-  			<source src="assets/Cat-meow.mp3" type="audio/mpeg">
+  			<source src="assets/cat-meow.mp3" type="audio/mpeg">
 		</audio>
-
+		<!--Link Javascript-->
 		<script type = "text/javascript" src="assets/javascript/game.js"></script>
+
 	</body>
 </html>

@@ -13,7 +13,7 @@ document.onkeyup = function(event){
 
 // Determines which key was pressed.
 	var userInput = event.key;
-
+	//Determine if user pressed a letter.
 	if (event.keyCode >= 65 && event.keyCode <= 90){
 
 		document.getElementById("guesses").innerHTML += userInput + " ";
@@ -36,7 +36,7 @@ document.onkeyup = function(event){
 				document.getElementById("gLeft").innerHTML = guessesLeft;
 				}
 		}
-
+		//When the guess count decreases to 0
 		else{
 			document.getElementById("sadMeow").play();
 			alert("You ran out of guesses! The letter I was thinking of was \'" + alphabet[randomIndex] + "\'.");
@@ -48,7 +48,7 @@ document.onkeyup = function(event){
 			randomIndex = Math.floor(Math.random() * alphabet.length);
 		}
 	}
-
+	//If they did not press a letter, ask for one.
 	else{
 		alert("Please choose a valid letter.");
 	}
