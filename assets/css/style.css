@@ -9,10 +9,6 @@ img {
 	animation: fadeIn 10s infinite alternate;
 }
 
-h1 {
-	animation: fadeIn 10s infinite alternate;
-}
-
 body {
 	/* Background pattern from Subtle Patterns */
 	background-image:url("../images/wormz/wormz.png") ;
