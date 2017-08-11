@@ -43,9 +43,9 @@ h2 {
 	color:midnightblue;
 	background-color:cornsilk;
 	border:1px dotted #700626;
-	animation: fadeIn 10s infinite alternate;
 }
 
 #guesses, #wins, #losses, #gLeft{
 	color: red;
 }
+
